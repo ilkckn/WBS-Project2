@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-clifford: #da373d;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/styles/main.css">
   <title>Document</title>
+
 </head>
 <body>
   <header></header>
@@ -12,58 +22,64 @@
    
         <!-- Section Dishes -->
     <section>
-      <h1>Lorem ipsum dolor </h1>
+      <img src="./src/img/title-lorem-3-black.png" alt="title lorem">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Nisi dolorum recusandae illum, repellat autem debitis.</p>
       <div class="card">
-        <img src="" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="./src/img/plate-pomodoro.png" alt="Pomodoro plate">
+        <h3>Lorem, ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
       </div>
       <div class="card">
-        <img src="" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="./src/img/plate-spag-mozza.png" alt="Spaghetti mozzarella">
+        <h3>Lorem, ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
       </div>
       <div class="card">
-        <img src="" alt="">
-        <h3></h3>
-        <p></p>
+        <img src="./src/img/plate-spag-olive.png" alt="Spaghetti Olive">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
       </div>
       <button type="button">Show More</button>
     </section>
     <!-- END Section Dishes -->
     <!-- Section Black paragraph -->
-     <section>
-      <h1>Lorem ipsum dolor</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
-        corporis numquam aspernatur praesentium error ut consectetur, 
-        sit blanditiis explicabo molestiae obcaecati laboriosam neque voluptatem? 
-        Consectetur, ratione corporis.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
-        corporis numquam aspernatur praesentium error ut consectetur, 
-        sit blanditiis explicabo molestiae obcaecati laboriosam neque voluptatem? 
-        Consectetur, ratione corporis.
-      </p>
-      <button type="button">More Info</button>
+     <section class="bg-black">
+      <img src="./src/img/title-lorem-3-white.png" alt="title lorem">
+      <div class="flex">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
+          corporis numquam aspernatur praesentium error ut consectetur, 
+          sit blanditiis explicabo molestiae obcaecati laboriosam neque voluptatem? 
+          Consectetur, ratione corporis.
+        </p>
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
+          corporis numquam aspernatur praesentium error ut consectetur, 
+          sit blanditiis explicabo molestiae obcaecati laboriosam neque voluptatem? 
+          Consectetur, ratione corporis.
+        </p>
+      </div>
+      <button class="bg-white text-black" type="button">More Info</button>
      </section>
     <!-- END Section Black paragraph -->
 
     <!-- Section Pizza -->
-     <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Sed, officiis perferendis! Harum ipsum, 
-        iste dolores numquam iure veritatis quia asperiores unde, 
-        porro, perferendis velit.
-      </p>
-      <hr>
-      <img src="" alt="">
+     <section class="bg-[url(./src/img/bg-pizza-section.png)]">
+      <div id="pizza-section" class="bg-[url(./src/img/leaves.png)] bg-center bg-no-repeat">
+        <img src="./src/img/title-lorem-5.png" alt="title lorem">
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Sed, officiis perferendis! Harum ipsum, 
+          iste dolores numquam iure veritatis quia asperiores unde, 
+          porro, perferendis velit.
+        </p>
+        <hr class="text-white w-4">
+        <img src="./src/img/pizza-cut.png" alt="pizza cut">
+        <img src="./src/img/pizza-slice.png" alt="pizza slice">
+  
+      </div>
      </section>
     <!-- END Section Pizza -->
 
