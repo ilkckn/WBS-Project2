@@ -4,68 +4,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Qwitcher+Grypen:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/landing.css">
   <title>Document</title>
 </head>
 
-<body>
-  <header></header>
+<body class="w-full h-full m-h-screen">
+  <header class="w-full h-15rem px-[10rem] max-lg:px-[5rem] flex justify-between items-center max-sm:h-[13rem]">
+    <nav class="w-full h-15rem flex justify-between items-center">
+      <div class="logo">
+        <figure>
+          <img class="w-[15rem]" src="src/assets/logo/Black and White Chef Food Logo.png" alt="">
+        </figure>
+      </div>
+      <div class="links-search flex justify-between items-center gap-10 max-lg:hidden">
+        <ul
+          class="links flex justify-between items-center gap-10 text-white text-[1.3rem] font-[400] tracking-[1px] uppercase">
+          <li><a href="src/pages/home.html">Home</a></li>
+          <li><a href="src/pages/about.html">Menu</a></li>
+          <li><a href="src/pages/contact.html">Our Story</a></li>
+          <li><a href="src/pages/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="searchBar w-[12rem] h-[2.5rem] flex relative">
+          <input class="w-full bg-white rounded-full px-6 font-[400] text-[1.1rem] tracking-[1px]" type="text"
+            placeholder="Search">
+          <svg class="w-[1.6rem] absolute top-2 right-5 font-bold" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="burgerMenu text-white w-[3rem] max-lg:block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+          className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </div>
+    </nav>
+  </header>
+
   <main>
-    <header>
-      <nav>
-        <div class="logo">
-          <figure>
-            <img src="" alt="">
-          </figure>
-        </div>
-        <div class="links-search">
-          <ul>
-            <li><a href="src/pages/home.html">Home</a></li>
-            <li><a href="src/pages/about.html">Menu</a></li>
-            <li><a href="src/pages/contact.html">Our Story</a></li>
-            <li><a href="src/pages/contact.html">Contact Us</a></li>
-          </ul>
-          <div class="searchBar">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
+    <section
+      class="landingContent w-full min-h-[calc(100vh-15rem)] grid grid-cols-2 pl-[10rem] max-lg:px-[8rem] max-lg:grid-cols-1 max-lg:gap-0 max-lg:place-items-center max-sm:px-15 max-sm:min-h-[calc(100vh-13rem)] max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-30 ">
+      <div
+        class="leftContent w-full flex flex-col justify-center items-start gap-10 max-lg:order-2 max-lg:items-center max-lg:justify-start max-lg:gap-2 max-lg:text-center">
+        <div
+          class="header-sub-text flex-col max-sm:flex max-sm:place-items-center max-sm:justify-start max-lg:place-items-center">
+          <h1 class="w-full text-white capitalize max-sm:leading-[7rem] max-lg:leading-[12rem]">italian food</h1>
+          <h2 class="text-white italic w-full capitalize mb-[3rem] tracking-[2px] max-sm:mb-[1rem]">Lorem ipsum dolor
+            sit</h2>
+          <div
+            class="button-p flex justify-center items-center bg-white w-[13rem] h-[3rem] rounded-full text-[1rem] font-[400] tracking-[1px] mb-[1.5rem]">
+            <button class="uppercase">read more</button>
           </div>
+          <p class="w-full text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt animi at
+            nam quod reiciendis praesentium minima quasi molestiae consectetur unde quia esse ratione molestias, debitis
+            deserunt, odit, suscipit veritatis?</p>
         </div>
-      </nav>
-    </header>
+      </div>
+      <div
+        class="rightContent w-full flex justify-center items-center max-lg:order-1 max-lg:w-[45rem] max-sm:w-[23rem]">
+        <figure class="relative flex justify-center items-center">
+          <img class="pasta w-[45rem] max-lg:w-[30rem] max-sm:w-[18rem]" src="src/assets/landing-images/pesto-pasta.png"
+            alt="">
+          <img class="mint-leaf absolute top-[60%]" src="src/assets/landing-images/leafs1.png" alt="">
+        </figure>
+      </div>
+    </section>
 
-    <main>
-      <section class="landingContent">
-        <div class="leftContent">
-          <div class="header-sub-text"></div>
-          <div class="button-p">
-            <button>read more</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nesciunt animi at nam quod reiciendis
-              praesentium minima quasi molestiae consectetur unde quia esse ratione molestias, debitis deserunt, odit,
-              suscipit veritatis?</p>
-          </div>
+    <section class="columnContent flex flex-col justify-center items-center gap-40 w-full py-20 max-lg:gap-20">
+      <div class="top flex justify-center items-center gap-10 w-ful px-[10rem] max-lg:flex-wrap max-lg:px-[4rem] max-lg:gap-5 ">
+        <div class="box flex flex-col justify-center gap-5 max-lg:gap-2">
+          <h1 class="capitalize">lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus id deleniti enim temporibus officia
+            fugit. Vero, quaerat sint eaque placeat, ipsum perspiciatis alias mollitia consectetur odit asperiores,
+            autem sed.</p>
         </div>
-        <div class="rightContent">
-          <figure>
-            <img src="" alt="">
-          </figure>
+        <div class="box box flex flex-col justify-center gap-5 max-lg:gap-2">
+          <h1 class="capitalize">lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus id deleniti enim temporibus officia
+            fugit. Vero, quaerat sint eaque placeat, ipsum perspiciatis alias mollitia consectetur odit asperiores,
+            autem sed.</p>
         </div>
-      </section>
+        <div class="box box flex flex-col justify-center gap-5 max-lg:gap-2">
+          <h1 class="capitalize">lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus id deleniti enim temporibus officia
+            fugit. Vero, quaerat sint eaque placeat, ipsum perspiciatis alias mollitia consectetur odit asperiores,
+            autem sed.</p>
+        </div>
+      </div>
 
-      <section class="columnContent">
-        <div class="top">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-        <div class="bottom">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis laboriosam nisi nam doloribus
-            quaerat cum saepe sunt! Alias esse id ratione modi, ullam fuga minus sequi sapiente doloribus voluptate
-            eveniet repudiandae error. Iste delectus incidunt, minima iusto praesentium dignissimos. Eaque sint facere
-            quia totam architecto, illum provident non.</p>
-          <h2>lorem ipsum</h2>
-        </div>
-      </section>
-    </main>
+      <div class="bottom text-center w-[70%] flex flex-col justify-center items-center gap-10 max-lg:w-[90%]">
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa qui minima libero facere natus amet,
+          quae iste adipisci ut quasi dolore deleniti nisi molestias tempore eum temporibus laboriosam maxime neque in
+          quam itaque alias sequi veritatis! Corporis reiciendis esse error, soluta facilis quia dignissimos omnis
+          consequatur beatae, dolores dolorem voluptates eum natus pariatur sed ipsa dolor.
+        </p>
+        <h2 class="text-2xl">Lorem Ipsum</h2>
+      </div>
+    </section>
+
   </main>
   <footer></footer>
 </body>
