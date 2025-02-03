@@ -6,7 +6,7 @@
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
-      --color-clifford: #da373d;
+      --color-shark: #27292c;
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,40 +21,46 @@
   <main>
    
         <!-- Section Dishes -->
-    <section>
-      <img src="./src/img/title-lorem-3-black.png" alt="title lorem">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <section class="h-screen flex flex-col items-center gap-6 justify-center">
+      <img class="w-1/2 mx-auto mb-4" src="./src/img/title-lorem-3-black.png" alt="title lorem">
+      <p class="font-[Open_Sans] font-normal text-center text-3xl mx-auto w-5/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Nisi dolorum recusandae illum, repellat autem debitis.</p>
-      <div class="card">
-        <img src="./src/img/plate-pomodoro.png" alt="Pomodoro plate">
-        <h3>Lorem, ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+      <div id="cards-container" class="mt-10 flex items-center justify-center">
+        <div class="card m-4 w-90 mx-auto">
+          <img src="./src/img/plate-pomodoro.png" alt="Pomodoro plate">
+          <h3 class="font-bold text-3xl mt-14">Lorem, ipsum</h3>
+          <p class="text-2xl mt-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor.</p>
+        </div>
+        <div class="card m-4 w-90 mx-auto">
+          <img src="./src/img/plate-spag-mozza.png" alt="Spaghetti mozzarella">
+          <h3 class="font-bold text-3xl mt-14">Lorem, ipsum</h3>
+          <p class="text-2xl mt-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card m-4 w-90 mx-auto">
+          <img src="./src/img/plate-spag-olive.png" alt="Spaghetti Olive">
+          <h3 class="font-bold text-3xl mt-14">Lorem ipsum</h3>
+          <p class="text-2xl mt-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="./src/img/plate-spag-mozza.png" alt="Spaghetti mozzarella">
-        <h3>Lorem, ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
-      </div>
-      <div class="card">
-        <img src="./src/img/plate-spag-olive.png" alt="Spaghetti Olive">
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing...</p>
-      </div>
-      <button type="button">Show More</button>
+        <button class="bg-black text-white px-17 py-5 
+        rounded-full font-bold text-2xl uppercase cursor-pointer
+        hover:bg-white hover:text-black hover:border" type="button">
+          Show More
+        </button>
     </section>
     <!-- END Section Dishes -->
     <!-- Section Black paragraph -->
-     <section class="bg-black">
-      <img src="./src/img/title-lorem-3-white.png" alt="title lorem">
+     <section class="flex flex-col items-center gap-6 bg-shark w-11/12 mx-auto mt-4 p-14">
+      <img class="mt-1" src="./src/img/title-lorem-3-white.png" alt="title lorem">
       <div class="flex">
-        <p class="text-white">
+        <p class="text-white p-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
           corporis numquam aspernatur praesentium error ut consectetur, 
           sit blanditiis explicabo molestiae obcaecati laboriosam neque voluptatem? 
           Consectetur, ratione corporis.
         </p>
-        <p class="text-white">
+        <p class="text-white p-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Temporibus, dolore voluptate maxime beatae ratione odit culpa nesciunt 
           corporis numquam aspernatur praesentium error ut consectetur, 
@@ -62,23 +68,27 @@
           Consectetur, ratione corporis.
         </p>
       </div>
-      <button class="bg-white text-black" type="button">More Info</button>
+      <button class="font-[Open_Sans] font-sans font-bold uppercase px-14 py-3
+        text-2xl text-center bg-white text-black rounded-full
+        cursor-pointer hover:bg-black hover:text-white hover:border" type="button">More Info</button>
      </section>
     <!-- END Section Black paragraph -->
 
     <!-- Section Pizza -->
-     <section class="bg-[url(./src/img/bg-pizza-section.png)]">
-      <div id="pizza-section" class="bg-[url(./src/img/leaves.png)] bg-center bg-no-repeat">
+     <section class=" bg-[url(./src/img/bg-pizza-section.png)] bg-no-repeat w-11/12 mx-auto">
+      <div id="pizza-section" class="flex flex-col gap-10 justify-center items-center bg-[url(./src/img/leaves.png)] bg-center bg-no-repeat">
         <img src="./src/img/title-lorem-5.png" alt="title lorem">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <p class="text-white font-[Open_Sans] font-normal text-center text-3xl mx-auto w-5/6 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Sed, officiis perferendis! Harum ipsum, 
           iste dolores numquam iure veritatis quia asperiores unde, 
           porro, perferendis velit.
         </p>
-        <hr class="text-white w-4">
-        <img src="./src/img/pizza-cut.png" alt="pizza cut">
-        <img src="./src/img/pizza-slice.png" alt="pizza slice">
-  
+        <hr class="text-white w-40 border-4">
+        <div>
+          <img src="./src/img/pizza-cut.png" alt="pizza cut">
+          <!--<img class="absolute" src="./src/img/pizza-slice.png" alt="pizza slice">-->
+        </div>
       </div>
      </section>
     <!-- END Section Pizza -->
