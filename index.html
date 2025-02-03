@@ -4,24 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/styles/main.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-clifford: #da373d;
+    }
+  </style>
   <title>Document</title>
 </head>
 <body>
   <header></header>
   <main>
-    <section class="subscribe">
-      <div class="background-subscribe">
-        <div class="subscribe-container">
-          <div class="subscribe-text">
-            <h2 class="subscribe-title">Subscribe to our Newsletter</h2>
-            <p class="subscribe-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <figure class="relative">
+        <img class="[w-rem]" src="src/img/5leaves.png" alt="leaves">
+      </figure>
+    <section class="flex flex-col justify-center items-center w-full h-15rem px-[10rem] m-h-screen p-5 bg-gray-900">
+          <div class="text-white text-center">
+            <h2 class="font-bold text-3xl">Subscribe to our Newsletter</h2>
+            <p class="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
           </div>
-          <div class="subscribe-form">
-            <form class="subscribe-input">
-              <input type="text" placeholder="Your Email">
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
+          <div class="max-w-md mx-auto rounded-full overflow-hidden md:max-w-xl">
+        <div class="md:flex">
+            <div class="w-full p-3">
+                <div class="relative"> 
+                  <input type="text" class="bg-white h-8 w-full px-4 pr-20 rounded-full focus:outline-none hover:cursor-pointer" placeholder="Your Email">
+                  <button class="h-8 rounded bg-gray-500 absolute top-0 text-sm right-0 px-6 text-white font-bold rounded-full hover:bg-gray-700 ">SUBSCRIBE</button>
+                </div>
+            </div>
+    </div>
         </div>
       </div>
     </section>
