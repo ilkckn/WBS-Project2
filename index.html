@@ -4,16 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Qwitcher+Grypen:wght@400;700&display=swap"
     rel="stylesheet">
+
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-shark: #27292c;
+    }
+  </style>
+
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="stylesheet" href="src/styles/landing.css">
   <title>Document</title>
 </head>
+
 
 <body class="w-full h-full min-h-screen">
   <header class="w-full h-60 px-4 sm:px-20 lg:px-40 flex justify-between items-center absolute top-0 left-0 z-50">
@@ -72,7 +85,98 @@
         </figure>
       </div>
     </section>
-
+ <!-- Section Dishes -->
+ <section class="flex flex-col items-center gap-6 justify-center">
+  <img
+    class="w-1/2 mx-auto mb-4"
+    src="./src/images/title-lorem-3-black.png"
+    alt="title lorem"
+  />
+  <p
+    class="font-[Open_Sans] font-normal text-xl text-center md:text-3xl mx-auto w-5/6"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum
+    recusandae illum, repellat autem debitis.
+  </p>
+  <div
+    id="cards-container"
+    class="mt-10 md:flex items-center justify-center"
+  >
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img src="./src/images/plate-pomodoro.png" alt="Pomodoro plate" />
+      <h3 class="font-bold justify-center text-xl md:text-3xl mt-14">Lorem, ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img
+        src="./src/images/plate-spag-mozza.png"
+        alt="Spaghetti mozzarella"
+      />
+      <h3 class="font-bold justify-center text-xl md:text-3xl mt-14">Lorem, ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor sit amet.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img src="./src/images/plate-spag-olive.png" alt="Spaghetti Olive" />
+      <h3 class="font-bold text-xl md:text-3xl mt-14">Lorem ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor sit.
+      </p>
+    </div>
+  </div>
+  <button
+    class="bg-black text-white px-17 py-5 rounded-full font-bold
+    m-4
+    md:text-2xl uppercase cursor-pointer 
+    hover:bg-white hover:text-black hover:border"
+    type="button"
+  >
+    Show More
+  </button>
+</section>
+<!-- END Section Dishes -->
+ <!-- Section Black paragraph -->
+ <section
+ class="flex flex-col items-center gap-4 bg-shark w-11/12 mx-auto mt-4 p-2"
+>
+ <img
+   class="mt-1"
+   src="./src/images/title-lorem-3-white.png"
+   alt="title lorem"
+ />
+ <div class="md:flex">
+   <p class="text-white p-12">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+     dolore voluptate maxime beatae ratione odit culpa nesciunt corporis
+     numquam aspernatur praesentium error ut consectetur, sit blanditiis
+     explicabo molestiae obcaecati laboriosam neque voluptatem?
+     Consectetur, ratione corporis.
+   </p>
+   <p class="text-white p-12">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+     dolore voluptate maxime beatae ratione odit culpa nesciunt corporis
+     numquam aspernatur praesentium error ut consectetur, sit blanditiis
+     explicabo molestiae obcaecati laboriosam neque voluptatem?
+     Consectetur, ratione corporis.
+   </p>
+ </div>
+ <button
+   class="font-[Open_Sans] font-sans font-bold uppercase px-14 py-3
+   m-4 
+   md:text-2xl text-center bg-white text-black rounded-full 
+   cursor-pointer hover:bg-black hover:text-white hover:border"
+   type="button"
+ >
+   More Info
+ </button>
+</section>
+<!-- END Section Black paragraph -->
     <section class="columnContent flex flex-col justify-center items-center gap-20 w-full py-40 px-40 sm:px-20">
       <div class="top flex flex-col lg:flex-row justify-center items-center gap-10 w-full px-4 sm:px-20 lg:px-40">
         <div class="box flex flex-col justify-center gap-5 text-center lg:text-left">
@@ -80,6 +184,7 @@
           <p class="text-base sm:text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
             id deleniti enim temporibus officia fugit. Vero, quaerat sint eaque placeat, ipsum perspiciatis alias
             mollitia consectetur odit asperiores, autem sed.</p>
+
         </div>
         <div class="box flex flex-col justify-center gap-5 text-center lg:text-left">
           <h1 class="text-6xl capitalize sm:text-7xl lg:text-8xl">lorem ipsum</h1>
@@ -95,8 +200,13 @@
         </div>
       </div>
 
+
       <div class="bottom text-center w-full px-4 sm:px-20 lg:px-40 flex flex-col justify-center items-center gap-10">
         <p class="text-lg lg:text-xl">
+
+      <div class="bottom text-center w-[70%] flex flex-col justify-center items-center gap-10 max-lg:w-[90%]">
+        <p class="text-lg">
+
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa qui minima libero facere natus amet,
           quae iste adipisci ut quasi dolore deleniti nisi molestias tempore eum temporibus laboriosam maxime neque in
           quam itaque alias sequi veritatis! Corporis reiciendis esse error, soluta facilis quia dignissimos omnis
@@ -105,8 +215,110 @@
         <h2 class="text-2xl lg:text-3xl">Lorem Ipsum</h2>
       </div>
     </section>
-  </main>
-  <footer></footer>
+
+ <!-- Section Pizza -->
+ <section
+ class="bg-[url(./src/images/bg-pizza-section.png)] bg-no-repeat 
+ w-11/12 mx-auto
+ p-6"
+>
+ <div
+   id="pizza-section"
+   class="flex flex-col gap-6 justify-center items-center bg-[url(./src/images/leaves.png)] bg-center bg-no-repeat"
+ >
+   <img src="./src/images/title-lorem-5.png" alt="title lorem" />
+   <p
+     class="text-white font-[Open_Sans] text-xl font-normal text-center md:text-3xl mx-auto w-5/6"
+   >
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+     officiis perferendis! Harum ipsum, iste dolores numquam iure
+     veritatis quia asperiores unde, porro, perferendis velit.
+   </p>
+   <hr class="text-white w-40 border-4" />
+   <div class="relative">
+     <img src="./src/images/pizza-cut.png" alt="pizza cut" />
+     <img
+       class="md:invisible h-78"
+       src="./src/images/pizza-slice.png"
+       alt="pizza slice"
+     />
+   </div>
+ </div>
+</section>
+<!-- END Section Pizza -->
+<!-- Beginning of Subscribe -->
+<section class="relative flex h-[30rem] mt-40 flex-col justify-center items-center w-full px-[10rem] p-5 bg-gray-900">
+      <figure class="absolute -top-10 w-full grow h-[130%]">
+        <img class="w-full h-full" src="src/img/5leaves.png" alt="leaves">
+      </figure>
+      <div class="text-white text-center">
+        <h2 class="font-bold text-3xl">Subscribe to our Newsletter</h2>
+        <p class="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+          vestibulum.</p>
+      </div>
+      <div class="max-w-md mx-auto rounded-full overflow-hidden md:max-w-xl">
+        <div class="md:flex">
+          <div class="w-full p-3">
+            <div class="relative">
+              <input type="text"
+                class="max-s:w-full bg-white h-8 w-full px-4 pr-20 rounded-full focus:outline-none hover:cursor-pointer"
+                placeholder="Your Email">
+              <button
+                class="h-8 rounded bg-gray-500 absolute top-0 text-sm right-0 px-6 text-white font-bold rounded-full hover:bg-gray-700 ">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- End of Subscribe -->
+</main>
+<footer class="flex-row gap-20 pt-60 pb-60 pl-5 pr-5">
+      <div class="flex flex-row items-center gap-6 font-[Open_Sans] font-normal text-xl text-left md:text-3x1 mx-auto ml-10 mr-10">
+        <div class="flex flex-col justify-left min-w-2xs" id="left-paragraph">
+          <h3 class="text-left pb-5">Title Here</h3>
+          <p class="text-left pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum Bla bla Bla.</p>
+            <div class="flex gap-2 items-left">
+              <img src="src/img/instagram.png" alt="instagram logo" width="42" height="42">
+              <img src="src/img/facebook.png" alt="facebook logo" width="42" height="42">
+              <img src="src/img/twitter.png" alt="twitter logo" width="42" height="42">
+              <img src="src/img/whatsapp.png" alt="whatsapp logo" width="42" height="42">
+            </div>
+        </div>
+        <div class="flex flex-row gap-10 text-nowrap text-left">
+          <div class="" id="col-1">
+            <h3 class="pb-5">About</h3>
+            <ul class= "">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Brand Guidelines</a></li>
+              <li><a href="#">Terms &amp; Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h3 class="pb-5">Services</h3>
+            <ul class="col-2-list-items">
+              <li><a href="#">How to Order</a></li>
+              <li><a href="#">Our Product</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Promo</a></li>
+              <li><a href="#">Payment Method</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3 class="pb-5">Other</h3>
+            <ul class="col-3-list-items">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
 </body>
 
 </html>
