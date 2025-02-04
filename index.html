@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Qwitcher+Grypen:wght@400;700&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-shark: #27292c;
+    }
+  </style>
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="stylesheet" href="src/styles/landing.css">
   <title>Document</title>
 </head>
-
 <body class="w-full h-full m-h-screen">
   <header class="w-full h-15rem px-[10rem] max-lg:px-[5rem] flex justify-between items-center max-sm:h-[13rem]">
     <nav class="w-full h-15rem flex justify-between items-center">
@@ -78,7 +85,98 @@
         </figure>
       </div>
     </section>
-
+ <!-- Section Dishes -->
+ <section class="flex flex-col items-center gap-6 justify-center">
+  <img
+    class="w-1/2 mx-auto mb-4"
+    src="./src/images/title-lorem-3-black.png"
+    alt="title lorem"
+  />
+  <p
+    class="font-[Open_Sans] font-normal text-xl text-center md:text-3xl mx-auto w-5/6"
+  >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum
+    recusandae illum, repellat autem debitis.
+  </p>
+  <div
+    id="cards-container"
+    class="mt-10 md:flex items-center justify-center"
+  >
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img src="./src/images/plate-pomodoro.png" alt="Pomodoro plate" />
+      <h3 class="font-bold justify-center text-xl md:text-3xl mt-14">Lorem, ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img
+        src="./src/images/plate-spag-mozza.png"
+        alt="Spaghetti mozzarella"
+      />
+      <h3 class="font-bold justify-center text-xl md:text-3xl mt-14">Lorem, ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor sit amet.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 items-center w-full mx-auto mb-12">
+      <img src="./src/images/plate-spag-olive.png" alt="Spaghetti Olive" />
+      <h3 class="font-bold text-xl md:text-3xl mt-14">Lorem ipsum</h3>
+      <p class="text-xl text-center md:text-2xl mt-4 px-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+        dolor sit.
+      </p>
+    </div>
+  </div>
+  <button
+    class="bg-black text-white px-17 py-5 rounded-full font-bold
+    m-4
+    md:text-2xl uppercase cursor-pointer 
+    hover:bg-white hover:text-black hover:border"
+    type="button"
+  >
+    Show More
+  </button>
+</section>
+<!-- END Section Dishes -->
+ <!-- Section Black paragraph -->
+ <section
+ class="flex flex-col items-center gap-4 bg-shark w-11/12 mx-auto mt-4 p-2"
+>
+ <img
+   class="mt-1"
+   src="./src/images/title-lorem-3-white.png"
+   alt="title lorem"
+ />
+ <div class="md:flex">
+   <p class="text-white p-12">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+     dolore voluptate maxime beatae ratione odit culpa nesciunt corporis
+     numquam aspernatur praesentium error ut consectetur, sit blanditiis
+     explicabo molestiae obcaecati laboriosam neque voluptatem?
+     Consectetur, ratione corporis.
+   </p>
+   <p class="text-white p-12">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+     dolore voluptate maxime beatae ratione odit culpa nesciunt corporis
+     numquam aspernatur praesentium error ut consectetur, sit blanditiis
+     explicabo molestiae obcaecati laboriosam neque voluptatem?
+     Consectetur, ratione corporis.
+   </p>
+ </div>
+ <button
+   class="font-[Open_Sans] font-sans font-bold uppercase px-14 py-3
+   m-4 
+   md:text-2xl text-center bg-white text-black rounded-full 
+   cursor-pointer hover:bg-black hover:text-white hover:border"
+   type="button"
+ >
+   More Info
+ </button>
+</section>
+<!-- END Section Black paragraph -->
     <section class="columnContent flex flex-col justify-center items-center gap-40 w-full py-20 max-lg:gap-20">
       <div class="top flex justify-center items-center gap-10 w-ful px-[10rem] max-lg:flex-wrap max-lg:px-[4rem] max-lg:gap-5 ">
         <div class="box flex flex-col justify-center gap-5 max-lg:gap-2">
@@ -100,7 +198,6 @@
             autem sed.</p>
         </div>
       </div>
-
       <div class="bottom text-center w-[70%] flex flex-col justify-center items-center gap-10 max-lg:w-[90%]">
         <p class="text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa qui minima libero facere natus amet,
@@ -112,8 +209,37 @@
       </div>
     </section>
 
-  </main>
-  <footer></footer>
+ <!-- Section Pizza -->
+ <section
+ class="bg-[url(./src/images/bg-pizza-section.png)] bg-no-repeat 
+ w-11/12 mx-auto
+ p-8"
+>
+ <div
+   id="pizza-section"
+   class="flex flex-col gap-10 justify-center items-center bg-[url(./src/images/leaves.png)] bg-center bg-no-repeat"
+ >
+   <img src="./src/images/title-lorem-5.png" alt="title lorem" />
+   <p
+     class="text-white font-[Open_Sans] text-xl font-normal text-center md:text-3xl mx-auto w-5/6"
+   >
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+     officiis perferendis! Harum ipsum, iste dolores numquam iure
+     veritatis quia asperiores unde, porro, perferendis velit.
+   </p>
+   <hr class="text-white w-40 border-4" />
+   <div class="relative">
+     <img src="./src/images/pizza-cut.png" alt="pizza cut" />
+     <img
+       class="md:invisible"
+       src="./src/images/pizza-slice.png"
+       alt="pizza slice"
+     />
+   </div>
+ </div>
+</section>
+<!-- END Section Pizza -->
+</main>
+<footer></footer> 
 </body>
-
 </html>
